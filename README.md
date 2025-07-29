@@ -1,16 +1,23 @@
 # post_sdk
 
-A new Flutter project.
+A simple Flutter SDK to show a list of posts and details fetched from a public API.
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Flutter application.
+```dart
+import 'package:flutter/material.dart';
+import 'package:post_sdk/post_sdk.dart';
 
-A few resources to get you started if this is your first Flutter project:
+void main() => runApp(const MyApp());
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyWidget(url: 'https://jsonplaceholder.typicode.com/posts'),
+    );
+  }
+}
+```
