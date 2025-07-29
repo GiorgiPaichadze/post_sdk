@@ -1,5 +1,5 @@
-name: post_sdk
-description: 'A new Flutter project.'
+name: post_sdk_test
+description: A Flutter SDK to fetch and display posts from a JSON API with list and detail views.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 version: 0.0.1
